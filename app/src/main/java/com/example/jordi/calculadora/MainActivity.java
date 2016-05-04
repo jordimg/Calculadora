@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickbtnM1(View miView){
         TextView tv = (TextView) findViewById(R.id.txtNumero);
-        SharedPreferences prefs = getSharedPreferences("Memoria", Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences("Memòria", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("Numero1", tv.getText().toString());
         editor.commit();
